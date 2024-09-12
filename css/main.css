@@ -1,0 +1,235 @@
+/* reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* estilos generales header */
+
+h1 {
+    background-color: black;
+    text-decoration: underline;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 50px;
+}
+
+header {
+    background-color:#F8F8F8 ;
+    margin: 0px 30px;
+}
+
+header img {
+    width: 15%;
+}
+
+header nav ul {
+    text-align: center;
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 20%;
+    margin: 20px;
+    border-radius: 100px;
+    background-color: tomato;
+    padding: 10px;
+    box-shadow: 10px 10px 20px;
+    color: black;
+    display: flex;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+/* estilos main general */
+
+main {
+    background-color: darkred;
+    text-align: center;
+    color: whitesmoke;
+}
+
+main img {
+    width: 50%;
+}
+
+
+main p {
+    padding: 20px;
+}
+
+main h1{
+    font-size: 3rem;
+}
+
+main h2 {
+    font-size: 2rem;
+    color: black;
+}
+
+.red-bg{
+    background-color:darkred;
+}
+
+
+
+/* estilos de entrenador - etiqueta main  */
+.main-dt{
+    margin: 0px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-dt .textos{
+  text-align: center;  
+}
+    
+.main-dt h1 {
+    margin-bottom: 30px;
+}
+
+.main-dt .img{
+    width: 120%;
+    height: 120%;
+    border-radius: 15%;
+}
+
+.main-dt div p {
+    text-align: center;
+}
+
+.main-dt p {
+    padding: 15px;
+}
+
+
+
+/* estilos de index - etiqueta main */
+
+.main-home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-home h1 {
+    margin-bottom: 15px;
+}
+
+.main-home h2 {
+    margin: 5px;
+}
+
+.main-home img {
+    border-radius: 15%;
+    width: 100%;
+    padding: 5%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-home p {
+    padding: 20px;
+}
+
+
+/* estilos footer */
+
+footer p {
+    color: whitesmoke;
+}
+
+footer {
+    background-color: black;
+}
+
+footer h1 {
+    color: whitesmoke;
+    text-align: left;
+}
+
+footer ul li a {
+    color: whitesmoke;
+}
+
+/* estilos galeria main */
+/* estilo mobile */
+
+.main-dt div img{
+    width: 70%;
+    height: 100%;
+    border-radius: 15%;
+}
+
+
+.contenedor{
+    margin: 30px 30px;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3,32%);
+    row-gap: 1.5rem;
+    align-content: center;
+}
+
+.contenedor div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* estilos de tablet */
+
+@media screen and (min-width:600px){
+    .contenedor{
+        grid-template-columns:repeat(2, 1fr);
+        grid-template-rows:repeat(2, 15%);
+        column-gap: 1.5rem;
+    }
+    .contenedor .img-cuatro{
+        grid-column: span 2;
+    }
+}
+
+/* estilos desktop */
+
+@media screen and (min-width: 1024px){
+    body{
+        background-color: brown;
+    }
+      .contenedor .img-dos, .contenedor .img-cinco{
+        display: block;
+     }
+
+     .contenedor{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 25% 25% 15%;
+     }
+     
+     .contenedor .img-uno, .img-tres{
+        grid-row: span 2;
+     }
+
+     .contenedor .img-dos, .contenedor .img-cuatro{
+        grid-column: span 1;
+     } 
+
+     .contenedor .img-seis{
+        grid-column: span 2;
+     }
+}
+
+
+
+
+
+
+
+
