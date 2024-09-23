@@ -8,6 +8,13 @@
 
 /* estilos generales header */
 
+header {
+    padding: 2rem;
+    background-color: black ;
+    margin: 0px 30px;
+    display: flex;
+}
+
 h1 {
     background-color: black;
     text-decoration: underline;
@@ -15,13 +22,15 @@ h1 {
     margin: 50px;
 }
 
-header {
-    background-color:#F8F8F8 ;
-    margin: 0px 30px;
+h2{
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+
 header img {
-    width: 15%;
+    width: 30%;
+    align-items: center;
 }
 
 header nav ul {
@@ -31,7 +40,7 @@ header nav ul {
 
 header nav ul li {
     display: inline-block;
-    margin-left: 20%;
+    margin-left: 50%;
     margin: 20px;
     border-radius: 100px;
     background-color: tomato;
@@ -43,10 +52,13 @@ header nav ul li {
 
 header nav ul li a {
     text-decoration: none;
-    color: black;
+    background-color: black;
+    
 }
 
-
+.red-bg{
+    background-color:black;
+}
 
 /* estilos main general */
 
@@ -65,109 +77,289 @@ main p {
     padding: 20px;
 }
 
-main h1{
+main h1 {
     font-size: 3rem;
+    background-color: rgb(37, 36, 36) ;
+    border-radius: 15%;
 }
 
 main h2 {
     font-size: 2rem;
-    color: black;
-}
-
-.red-bg{
-    background-color:darkred;
-}
-
-
-
-/* estilos de entrenador - etiqueta main  */
-.main-dt{
-    margin: 0px 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.main-dt .textos{
-  text-align: center;  
-}
+    color: whitesmoke;
+    font-size: 1rem;
     
-.main-dt h1 {
-    margin-bottom: 30px;
 }
-
-.main-dt .img{
-    width: 120%;
-    height: 120%;
-    border-radius: 15%;
-}
-
-.main-dt div p {
-    text-align: center;
-}
-
-.main-dt p {
-    padding: 15px;
-}
-
 
 
 /* estilos de index - etiqueta main */
+/* estilos mobile */
 
 .main-home {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color:rgb(241, 32, 32) ;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1,1fr);
+    row-gap: 1rem;
 }
 
-.main-home h1 {
-    margin-bottom: 15px;
-}
-
-.main-home h2 {
-    margin: 5px;
-}
-
-.main-home img {
-    border-radius: 15%;
-    width: 100%;
-    padding: 5%;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.main-home p {
-    padding: 20px;
-}
-
-
-/* estilos footer */
-
-footer p {
-    color: whitesmoke;
-}
-
-footer {
+.main-home .div-home{
     background-color: black;
+    color:whitesmoke ;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
 }
 
-footer h1 {
-    color: whitesmoke;
-    text-align: left;
+.main-home .div-home h1 span{
+    display: block;
 }
 
-footer ul li a {
-    color: whitesmoke;
+.main-home .div-home img {
+    border-radius: 20%;
 }
+
+.main-home .div-home h2{
+    margin: 2rem;
+    background-color: whitesmoke;
+    border-radius: 30px;
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 0,5%;
+}
+.main-home .div-home2 h2{
+    margin: 2rem;
+    background-color: whitesmoke;
+    border-radius: 30px;
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 0,5%;
+}
+.main-home .div-home2{
+    text-align: center;
+    background-color: rgb(31, 26, 26);
+    padding: 1rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.main-home p {
+    padding: 30px;
+}
+
+/* estilos tables */
+@media screen and (min-width:600px) {
+    .main-home .div-home h1 span{
+        display: inline;
+    }
+    .main-home .div-home .main-home .div-home2{
+        padding: 2rem;
+    }
+}
+
+
+/* estilos dekstop */
+@media screen and (min-width:1024px){
+    .main-home{
+        background-color: darkred;
+        padding: 2rem 2rem;
+        grid-template-columns: 1.5fr repeat(1,1fr);
+        grid-template-rows: 1fr;
+        column-gap: 2rem;
+    }
+
+    .main-home .div-home .main-home .div-home2{
+        padding: 3rem;
+    }
+
+    .main-home .div-home2 h2{
+        font-size: 1.4rem;
+    }
+
+    .main-home .div-home2{
+        display: flex;
+        gap: 2rem;
+    }
+}
+
+/* estilos jugador - etiqeta main */
+/* estilo mobile */
+
+.main-jugador{
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2,1fr);
+    row-gap: 1rem;
+    background-color:rgb(241, 32, 32);
+}
+
+.main-jugador .div-player{
+    background-color: black;
+    color:whitesmoke ;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.main-jugador .div-player h1 span{
+    display: block;
+}
+
+.main-home .div-home h2 span{
+    margin: 2rem;
+    background-color: whitesmoke;
+    border-radius: 30px;
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 0,5%;
+}
+
+.main-jugador .div-jugador img{
+    border-radius: 20%;
+}
+
+.main-jugador .div-jugador{
+    text-align: center;
+    background-color: brown;
+    padding: 1rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.main-jugador .div-jugador h2{
+    margin: 2rem;
+    background-color: whitesmoke;
+    border-radius: 30px;
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 0,5%;
+}
+
+/* estilos tables */
+
+@media screen and (min-width:600px) {
+    .main-jugador .div-player h1 span{
+        display: inline;
+    }
+    .main-jugador .div-player .main-jugador .div-jugador{
+        padding: 2rem;
+    }
+}
+
+/* estilos dekstop */
+@media screen and (min-width:1024px){
+    .main-jugador{
+        background-color: darkred;
+        padding: 2rem 2rem;
+        grid-template-columns: 1.5fr repeat(1,1fr);
+        grid-template-rows: 1fr;
+        column-gap: 2rem;
+    }
+
+    .main-jugador .div-player .main-jugador .div-jugador{
+        padding: 3rem;
+    }
+
+    .main-jugador .div-jugador h2{
+        font-size: 1.4rem;
+        padding: 1rem;
+    }
+
+    .main-jugador .div-jugador{
+        display: flex;
+        gap: 2rem;
+    }
+}
+
+
+/* estilos de entrenador - etiqueta main  */
+/* estilos mobile */
+
+.main-dt{
+    background-color:rgb(241, 32, 32) ;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2,1fr);
+    row-gap: 1rem;
+}
+
+.main-dt .div-uno{
+    background-color: black;
+    color:whitesmoke ;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.main-dt .div-uno h1 span{
+    display: block;
+}
+
+.main-dt .div-uno img{
+    border-radius: 20%;
+}
+.main-dt .div-generico img{
+    border-radius: 20%;
+}
+
+.main-dt .div-generico{
+    text-align: center;
+    background-color: brown;
+    padding: 1rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.main-dt .div-generico h2{
+    margin: 2rem;
+    background-color: whitesmoke;
+    border-radius: 30px;
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 0,5%;
+}
+
+/* estilos tables */
+@media screen and (min-width:600px) {
+    .main-dt .div-uno h1 span{
+        display: inline;
+    }
+    .main-dt .div-uno .main-dt .div-generico{
+        padding: 2rem;
+    }
+}
+
+/* estilos dekstop */
+@media screen and (min-width:1024px){
+    .main-dt{
+        background-color: darkred;
+        padding: 2rem 2rem;
+        grid-template-columns: 1.5fr repeat(2,1fr);
+        grid-template-rows: 1fr;
+        column-gap: 2rem;
+    }
+
+    .main-dt .div-uno .main-dt .div-generico{
+        padding: 3rem;
+    }
+
+    .main-dt .div-generico h2{
+        font-size: 1.4rem;
+    }
+
+    .main-dt .div-generico{
+        display: flex;
+        gap: 2rem;
+    }
+}
+
 
 /* estilos galeria main */
 /* estilo mobile */
-
-.main-dt div img{
-    width: 70%;
-    height: 100%;
-    border-radius: 15%;
-}
-
 
 .contenedor{
     margin: 30px 30px;
@@ -226,10 +418,24 @@ footer ul li a {
      }
 }
 
+/* estilos footer */
 
+footer p {
+    color: whitesmoke;
+}
 
+footer {
+    background-color: black;
+}
 
+footer h1 {
+    color: whitesmoke;
+    text-align: left;
+}
 
+footer ul li a {
+    color: whitesmoke;
+}
 
 
 
