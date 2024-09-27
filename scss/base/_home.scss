@@ -1,0 +1,179 @@
+//import de listas
+
+//estilos de home generales
+
+//nesting
+
+//estilos header general 
+header {
+    padding: 10px 0;
+    padding: 2rem;
+    background-color: $color-secundario;
+    margin: 0px 30px;
+    display: flex;
+    .red-bg{
+        background-color: $color-secundario;
+    }
+
+
+    h1 {
+        background-color: $color-secundario;
+        text-decoration: underline;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin: 50px;
+    }
+
+    h2 {
+        padding: 10px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    img {
+        width: 30%;
+        align-items: center;
+        max-width: 100%;
+    }
+
+    nav {
+        ul {
+            text-align: center;
+            list-style: none;
+        }
+    }
+
+    nav {
+        ul {
+            li {
+                a {
+                    text-decoration: none;
+                    background-color: black;
+                }
+            }
+        }
+    }
+
+
+    nav {
+        ul {
+            li {
+                display: inline-block;
+                margin-left: 50%;
+                margin: 20px;
+                border-radius: 100px;
+                background-color: tomato;
+                padding: 10px;
+                box-shadow: 10px 10px 20px;
+                color: black;
+                display: flex;
+            }
+        }
+    }
+
+    .navbar {
+        background-color: black;
+    }
+
+    .navbar-toggler {
+        border: none;
+    }
+
+}
+
+//estilos de main general
+
+main {
+    background-color: darkred;
+    text-align: center;
+    color: whitesmoke;
+
+    img {
+        width: 50%;
+    }
+
+    p {
+        padding: 20%;
+    }
+
+    h1 {
+        font-size: 2rem;
+        color: whitesmoke;
+    }
+
+    h2 {
+        font-size: 2rem;
+        color: whitesmoke;
+        font-size: 1rem;
+    }
+}
+
+//estilos de footer general 
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+
+
+    p {
+        color: whitesmoke;
+    }
+
+    h1 {
+        color: whitesmoke;
+        text-align: center;
+        font-size: 1.5em;
+        margin-bottom: 15px;
+        max-width: 600px;
+        margin: 0 auto;
+        font-size: 1.5em;
+    }
+
+    ul {
+        li {
+            a {
+                color: whitesmoke;
+            }
+        }
+    }
+
+    div {
+        margin: 15px 0;
+    }
+
+    iframe {
+        width: 100%;
+        max-width: 600px;
+        height: 300px;
+        border: 0;
+    }
+
+    //estilos para la lista
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    ul {
+        li {
+            display: inline;
+            margin: 0 10px
+        }
+    }
+
+    //enlaces
+    a {
+        color: #ff5733;
+        text-decoration: none;
+    }
+
+    a{
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+
+
+
+
+}

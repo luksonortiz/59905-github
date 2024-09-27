@@ -1,0 +1,130 @@
+//header 
+//desktop
+@media (min-width: 992px) {
+    .navbar-nav {
+        justify-content: flex-end;
+
+        .nav-item {
+            margin-left: 20px;
+        }
+    }
+
+    img {
+        width: 150px; 
+    }
+}
+// index-main
+@media screen and (min-width: 1024px) {
+    .main-home {
+        background-color: darkred;
+        padding: 2rem 2rem;
+        grid-template-columns: 1.5fr repeat(1, 1fr);
+        grid-template-rows: 1fr;
+        column-gap: 2rem;
+
+        .div-home {
+            .div-home2 {
+                padding: 3rem;
+
+                h2 {
+                    font-size: 1.4rem;
+                }
+
+                display: flex;
+                gap: 2rem;
+            }
+        }
+    }
+}
+
+//jugador-main
+@media (min-width: 1025px) {
+    .main-jugador {
+        max-width: 1200px;
+        margin: 0 auto;
+
+        .div-player,
+        .div-jugador {
+            flex: 1 1 30%;
+        }
+    }
+}
+
+//entrenador
+@media screen and (min-width: 1024px) {
+    .main-dt {
+        background-color: darkred;
+        padding: 2rem 2rem;
+        grid-template-columns: 1.5fr repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        column-gap: 2rem;
+
+        .div-uno {
+            .div-generico {
+                padding: 3rem;
+
+                h2 {
+                    font-size: 1.4rem;
+                }
+
+                display: flex;
+                gap: 2rem;
+            }
+        }
+    }
+}
+
+//galeria
+@media screen and (min-width: 1024px) {
+    body {
+        background-color: brown;
+    }
+
+    .contenedor {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 25% 25% 15%;
+
+        .img-dos,
+        .img-cinco {
+            display: block;
+        }
+
+        .img-uno,
+        .img-tres {
+            grid-row: span 2;
+        }
+
+        .img-dos,
+        .img-cuatro {
+            grid-column: span 1;
+        }
+
+        .img-seis {
+            grid-column: span 2;
+        }
+    }
+}
+
+//contacto
+@media (min-width: 1025px) {
+    .main-contacto {
+        max-width: 900px;
+
+        input[type="submit"],
+        input[type="reset"] {
+            width: 48%;
+        }
+    }
+}
+
+//footer
+@media (min-width: 1025px) {
+    #footer {
+        h1 {
+            font-size: 1.5em;
+        }
+    }
+}
+
+
+

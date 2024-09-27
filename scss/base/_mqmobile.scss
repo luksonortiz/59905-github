@@ -1,0 +1,42 @@
+//header
+@media (max-width: 575px) {
+    .navbar-nav {
+        text-align: center;
+
+        .nav-item {
+            margin-bottom: 10px;
+        }
+    }
+
+    img {
+        width: 80px;
+    }
+}
+
+
+
+//jugador
+@media (max-width: 767px) {
+
+    .div-player,
+    .div-jugador {
+        flex: 1 1 100%;
+        margin: 10px 0;
+    }
+}
+
+
+//footer
+@media (max-width: 767px) {
+    #footer {
+        padding: 15px;
+
+        h1 {
+            font-size: 1.2em;
+        }
+
+        iframe {
+            height: 200px;
+        }
+    }
+}

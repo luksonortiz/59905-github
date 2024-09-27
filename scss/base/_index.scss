@@ -1,0 +1,52 @@
+// nesting
+
+// estilos index 
+.main-home {
+    background-color: $color-cuarto;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1, 1fr);
+    row-gap: 1rem;
+  
+    .div-home {
+      background-color: $color-secundario;
+      color: $color-cuarto;
+      flex-direction: column;
+      gap: 1rem;
+      padding: 1rem;
+  
+      h1 {
+        span {
+          display: block;
+        }
+      }
+  
+      img {
+        border-radius: 20%;
+      }
+  
+      h2 {
+        margin: 2rem;
+        background-color: $color-cuarto;
+        border-radius: 30px;
+        color: $color-secundario;
+        font-family: $font-trebuchet;
+        padding: 0, 5%;
+      }
+    }
+  
+    .div-home2 {
+      text-align: center;
+      background-color: rgb(31, 26, 26);
+      padding: 1rem;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+  
+    p {
+      padding: 30px;
+    }
+  }
+  
