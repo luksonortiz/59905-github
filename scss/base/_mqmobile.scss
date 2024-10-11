@@ -4,6 +4,7 @@
         text-align: center;
 
         .nav-item {
+            padding: 30px;
             margin-bottom: 10px;
         }
     }
@@ -91,9 +92,45 @@
 
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
+    .video-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .responsive-iframe,
+    .video-text {
+        width: 100%;
+        padding: 0;
+    }
+
+    .responsive-iframe iframe {
+        height: auto; // Ajusta el tamaño del video en mobile
+    }
+
+    .video-2-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    // video n2
+    // Cambiar el orden para que el video aparezca primero en mobile
+    .video-2-text {
+        order: 2; // Cambiar el orden del texto
+    }
+
     .responsive-iframe {
-        padding-bottom: 75%;
+        order: 1; // El video sigue primero
+    }
+
+    .responsive-iframe,
+    .video-2-text {
+        width: 100%;
+        padding: 0;
+    }
+
+    .responsive-iframe iframe {
+        height: auto; // Ajusta el tamaño del video en mobile
     }
 }
 
